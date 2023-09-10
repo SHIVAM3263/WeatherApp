@@ -1,0 +1,96 @@
+.container{
+    width: 600px;
+    height: max-content;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #F17C58, #E94584, #24AADB, #27DBB1, #FFDC18, #FF3706);
+    animation: gradient 16s linear infinite;
+    background-size: 600% 100%;
+    animation-direction: alternate;
+   
+}
+@keyframes gradient {
+    0% {
+        background-position: 0%
+    }
+
+    100% {
+        background-position: 100%
+    }
+}
+.top-bar{
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    padding-top: 40px;
+}
+input{
+    width: 75%;
+    height: 40px;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    color: #626262;
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 20px;
+
+}
+.value-convertor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    color: #626262;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.search-icon img{
+    cursor: pointer;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 55px;
+    color: white;
+    font-size: 60px;
+    font-weight: 200;
+}
+.weather-temp{
+    font-size: 120px;
+    font-weight: 400;
+}
+
+.data-container{
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    gap: 55px;
+}
+.element{
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 40px;
+}
+.text{
+    font-size: 0.5em;
+}
+.icon{
+    margin-top: 12px;
+}
+.error-container{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 300;
+}
