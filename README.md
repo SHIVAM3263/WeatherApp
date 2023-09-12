@@ -27,7 +27,7 @@ OpenWeatherMap API
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Clone the repository to your local machine
-git clone https://github.com/your-username/weather-app.git
+git clone https://github.com/Shivam3263/weather-app.git
 
 ## Change directory to the project folder:
 cd weather-app
