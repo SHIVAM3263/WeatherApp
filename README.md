@@ -2,7 +2,7 @@
 
 This is a simple weather app that allows you to check the weather for a specific location as you type and toggle between Celsius and Fahrenheit temperature units.
 
-#Screenshot
+# Screenshot
 <img src='./public/Weather-screenshot.png' />
 
 # Features
