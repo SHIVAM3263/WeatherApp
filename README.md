@@ -2,6 +2,9 @@
 
 This is a simple weather app that allows you to check the weather for a specific location as you type and toggle between Celsius and Fahrenheit temperature units.
 
+#Screenshot
+<img src='./public/Weather-screenshot.png' />
+
 # Features
 
 Real-time weather data updates as you type a location.
@@ -12,7 +15,7 @@ Automatically fetches weather data from the OpenWeatherMap API.
 
 Dynamic Weather icon update on the basis of weather status.
 
-No data found displayed for wrong searches.
+Different error messages for different errors.
 
 
 # Technologies Used
