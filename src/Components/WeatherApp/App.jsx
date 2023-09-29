@@ -11,6 +11,7 @@ const App = () => {
   const[city,setCity]=useState(null);
   const[search,setSearch]=useState(null);
   const [units, setUnits] = useState('metric');
+  const[error,setError]=useState(null);
 
 useEffect(()=>{
   const fetchAPI=async () =>{
@@ -38,13 +39,19 @@ useEffect(()=>{
     };
 
     setCity(cityData);
+    setError(null);
   } else {
-    // If the response is not ok, set city to null
+    if (response.status === 404) {
+      setError('Location not found');
+    } else {
+      setError('API request failed');
+    }
     setCity(null);
   }
 } catch (error) {
   // Handle any other errors here, e.g., network error
   console.error(error);
+  setError('Please check your network connection');
   setCity(null);
 }
 
@@ -66,7 +73,7 @@ const toggleTemperatureUnit = () => {
     <div className="container">
         <WeatherTop setsearch={handleChange} toggleTemperatureUnit={toggleTemperatureUnit} unit={units}/>
         
-        {!city ? (<div className="error-container"><p>Error retreiving data</p></div>)
+        {!city ? (<div className="error-container"><p>{error || 'Please check your network connection'}</p></div>)
         : (
         <>
         <WeatherMain main={city.main} search={search} temp={city.temp} unit={units} />

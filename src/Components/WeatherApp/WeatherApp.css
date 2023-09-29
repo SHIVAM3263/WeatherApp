@@ -1,6 +1,6 @@
 .container{
     width: 600px;
-    height: max-content;
+    height: fit-content;
     margin: auto;
     margin-top: 20px;
     border-radius: 12px;
@@ -93,4 +93,7 @@ input{
     justify-content: center;
     font-size: 30px;
     font-weight: 300;
+}
+@media screen {
+    
 }
