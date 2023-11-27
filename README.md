@@ -3,7 +3,7 @@
 This is a simple weather app that allows you to check the weather for a specific location as you type and toggle between Celsius and Fahrenheit temperature units.
 
 # Screenshot
-<img src='./public/Weather-screenshot.png' />
+![Weather-ScreenShot](https://raw.github.com/SHIVAM3263/WeatherApp/main/public/Weather-screenshot.png)
 
 # Features
 
